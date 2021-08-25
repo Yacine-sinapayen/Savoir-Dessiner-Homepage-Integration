@@ -1,0 +1,29 @@
+.main-footer{
+    background-color: black;
+    color: white;
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.article__container{
+    width: calc((100%/2) - (2*1rem));
+    margin: 1rem;
+    padding: 1rem;
+}
+.article__img{
+    width: 100%;
+}
+
+/* Modifier */
+
+.background--color--gray {
+    background-color: #F8F8F8;
+}
+.background--color--yellow {
+    background-color: #FFE401;
+}
+

@@ -4,9 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Homepage integration</title>
 </head>
 <body>
-    <h1>helloword</h1>
+    <header class="header">
+        <img class="header__logo" src="/images/logo-header.svg" alt="logo-header">
+        <nav class="header__nav">
+            <a class="header__items" href="">L'atelier online</a>
+            <a class="header__items" href="">Les RDV coaching</a>
+            <a class="header__items" href=""> La box</a>
+            <a class="header__items" href="">A propos <img class="icon__a-propos" src="/images/icon-menu-déroulant.svg" alt=""></a>
+        </nav>
+
+        <nav class="header__secondary-nav">
+            <a class="header__secondary-items" href="">Le shop</a>
+            <a class="header__secondary-items" href=""> <img src="/images/logo-panier.svg" alt="" class="logo__panier"> Mon panier</a>
+            <a class="header__secondary-items" href="">Se connecter <img class="icon__se-connecter" src="/images/icon-menu-déroulant.svg" alt=""></a> 
+            <a class="header__secondary-items bouton--commencer" href="">Commencer</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <article class="article background--color--yellow">
+            <div class="article__container">P1
+                <h3 class="article__subtitle">L'atelier online</h3>
+                <h1 class="article__title">Apprenez le dessin et la peinture depuis chez vous</h1>
+                <a class="article__bouton" href="">s'inscrire gratuitement</a>
+                <img class="icon__blanc" src="/images/Tracé-blanc.svg" alt="">
+            </div>
+            <div class="article__container">
+                <img class="article__img" src="/images/Groupe 3867.png" alt="">
+            </div>
+        </article>
+
+        <article class="article background--color--gray">
+            <div class="article__content-title">
+                <h3 class="article__subtitle">Votre école d'art en accès libre illimité</h3>
+            </div>
+            <div class="article__main-content">
+                <div class="article__content">
+                    <img class="article__icons" src="/images/icon_play_vert.svg" alt="">
+                    <h3 class="article__subtitle">À la carte</h3>
+                    <p class="article__description">+ de 150 heures de cours accessibles où vous voulez, quand vous voulez.</p>
+                </div> 
+                <div class="article__content">
+                    <img class="article__icons" src="/images/icon_play_rouge.svg" alt="">
+                    <h3 class="article__subtitle">Accessible à tous</h3>
+                    <p class="article__description">Débutants comme confirmés, nos cours vous accompagnent pas à pas dans toutes vos envies.</p>
+                </div>
+                <div class="article__content">
+                    <img class="article__icons" src="/images/icon_pouce_bleu.svg" alt="">
+                    <h3 class="article__subtitle">Sans engagement</h3>
+                    <p class="article__description">Vous êtes libres d’annuler votre abonnement à tout moment !</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="article">
+            <h1 class="article__title">Découvrez et créez, tout simplement.</h1>
+            <p class="article__description">Des centaines de cours et live à la difficulté progressive pour maitriser les bases, affirmer sa pratique et développer une approche personnelle du dessin.</p>
+            <img class="icon__jaune" src="/images/Tracé-jaune.svg" alt="">
+        </article>
+        
+        <article class="article">
+            <div class="card">
+                <img src="/images/img-portrait-bleu.png" alt="">
+                <div class="card__description">
+                    <div> <img class="card__icon" src="/images/Icon-diplome-vert.svg" alt=""> Tous niveaux</div>
+                    <div> <img class="card__icon" src="/images/Icon-horaire.svg" alt=""> 7h</div>
+                <p>11 cours</p>
+                </div>
+                <h1 class="card__title">Le portrait réaliste</h1>
+                <p class="card__text">Toutes les techniques pour réaliser des portraits plus vrais que nature.</p>
+                <a class="card__bouton bouton--commencer" href=""> Commencer </a>
+            </div>
+
+            <div class="card">
+                <img src="/images/header-paysage-pastel-panorama.png" alt="">
+                <div class="card__description">
+                    <div> <img class="card__icon" src="/images/Icon-diplome-vert.svg" alt=""> Tous niveaux</div>
+                    <div> <img class="card__icon" src="/images/Icon-horaire.svg" alt=""> 7h</div>
+                <p>11 cours</p>
+                </div>
+                <h1 class="card__title">Le portrait réaliste</h1>
+                <p class="card__text">Toutes les techniques pour réaliser des portraits plus vrais que nature.</p>
+                <a class="card__bouton bouton--commencer" href=""> Commencer </a>
+            </div>
+
+            <div class="card">
+                <img src="/images/carnet-panorama.png" alt="">
+                <div class="card__description">
+                    <div> <img class="card__icon" src="/images/Icon-diplome-vert.svg" alt=""> Tous niveaux</div>
+                    <div> <img class="card__icon" src="/images/Icon-horaire.svg" alt=""> 7h</div>
+                <p>11 cours</p>
+                </div>
+                <h1 class="card__title">Le portrait réaliste</h1>
+                <p class="card__text">Toutes les techniques pour réaliser des portraits plus vrais que nature.</p>
+                <a class="card__bouton bouton--commencer" href=""> Commencer </a>
+            </div>
+        </article>
+        <div class="bouton__content">
+            <a class="bouton__voir-tous-les-cours" href="">Voir tous les cours</a>
+        </div>
+
+        <article class="article">
+            <div class="article__img-content">
+                <img class="article__img" src="/images/img-coupe-garçon-grande.png" alt="">
+            </div>
+            <div class="article__content">
+                <h1 class="article__title">Explorez vos sens artistiques</h1>
+                <img class="article__icon" src="/images/Tracé-zigzag-jaune.svg" alt="">
+                <p class="article__description">Quelque soit votre niveau, découvrez des centaines de cours accessibles partout, à tout moment. Pour vous exercer pas à pas en dessin et en peinture, à votre rythme.</p>
+                <a class="article__bouton" href="">DÉMARRER LES COURS EN LIGNE</a>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article__content">
+                <h1 class="article__title">Explorez vos sens artistiques</h1>
+                <img class="article__icon" src="/images/Tracé-zigzag-jaune.svg" alt="">
+                <p class="article__description">Quelque soit votre niveau, découvrez des centaines de cours accessibles partout, à tout moment. Pour vous exercer pas à pas en dessin et en peinture, à votre rythme.</p>
+                <a class="article__bouton" href="">DÉMARRER LES COURS EN LIGNE</a>
+            </div>
+            <div class="article__img-content">
+                <img class="article__img" src="/images/img-fond-vert-grande.png" alt="">
+            </div>
+        </article>
+
+        <footer class="main-footer">
+            <div class="footer__part">
+                <img src="/images/Logo-footer.svg" alt="">
+                <a href="">info@savoirdessinerparis.fr</a>
+                <div>
+                    <img src="/images/icon-insta.svg" alt=""><img src="/images/icon-facebook.svg" alt=""><img src="/images/icon-pinterest.svg" alt=""><img src="/images/icon-youtube.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__part">
+                <h4 class="footer__title"><img src="/images/Tracé-footer-bleu.svg" alt=""> Atelier Commerce</h4>
+                <p class="footer__adresse">8 rue de l’Abbé Groult, 75015 Paris</p>
+                <p class="footer__numéro">06 65 30 88 59</p>
+            </div>
+            <div class="footer__part">
+                <h4 class="footer__title"><img src="/images/Tracé-footer-bleu.svg" alt=""> Atelier Commerce</h4>
+                <p class="footer__adresse">8 rue de l’Abbé Groult, 75015 Paris</p>
+                <p class="footer__numéro">06 65 30 88 59</p>
+            </div>
+            <div class="footer__part">
+                <h4 class="footer__title"><img src="/images/Tracé-footer-bleu.svg" alt=""> Atelier Commerce</h4>
+                <p class="footer__adresse">8 rue de l’Abbé Groult, 75015 Paris</p>
+                <p class="footer__numéro">06 65 30 88 59</p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
