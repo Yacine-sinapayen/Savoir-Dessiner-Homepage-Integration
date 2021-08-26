@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap');
 body{
-font-family: 'Jost', sans-serif;;   
+font-family: 'Jost', sans-serif;
+position: relative;   
 }
+
+
+
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1rem 1.5rem 1rem 1.5rem;
-    max-height: 105px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+   
 }
 .header__logo{
     margin: 1rem;
@@ -90,10 +100,11 @@ font-family: 'Jost', sans-serif;;
 
 /* Article 1 */
 .article__1{
-    padding: 100px 0rem 100px 0rem;
+    padding: 5rem 3rem 5rem 3rem;
     background-color: #FFE401;
     display: flex;
     flex-direction: row;
+    margin-top: 7rem;
 }
 .article__container{
     width: calc((100%/2) - (2*1rem));
@@ -169,8 +180,13 @@ font-family: 'Jost', sans-serif;;
     margin: 3rem 10rem 1rem 10rem;
 }
 .article__3-title{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 50px;
+    font-weight: 550;
     margin-bottom: 1rem;
     background-image: url(/images/Tracé-jaune.svg);
     background-repeat: no-repeat;
@@ -310,17 +326,23 @@ font-family: 'Jost', sans-serif;;
     font-weight: 500;
 
 }
-
 .font--weight--bold{
     font-weight: 500;
 }
 
+label, #toggle
+{
+    display: none;
+}
+
 /*------------- Responsive */
 @media screen and (min-width: 671px) and (max-width: 1274px) {
+   
     .header {
         display: flex;
         flex-direction: column;
         margin-bottom: 8rem;
+
     }
     .article__1 {
         display: flex;
@@ -328,12 +350,26 @@ font-family: 'Jost', sans-serif;;
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 20rem;
     }
     .background__img{
         background-position: center;
     }
     .article__subtitle{
         margin: 0rem 0rem 2rem 0rem;
+    }
+    .article__4{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+       margin: 2rem;
+       width: calc((100%/1) - (2*2rem));
+    }
+
+    .card__description{
+        display: flex;
+        flex-wrap: wrap;
     }
     .card__description{
         display: flex;
@@ -352,8 +388,22 @@ font-family: 'Jost', sans-serif;;
     .article__5-description{
         margin: 1rem 0rem 3rem 0rem;
     }
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+      
+        height: 750px;
+    }
+    .footer__part{
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0rem 2rem 0rem;
+    }
 }
 @media screen and (max-width: 671px) {
+    .main-content{
+        margin-top: 20 rem;
+    }
     .header {
         display: flex;
         flex-direction: column;
@@ -424,4 +474,27 @@ font-family: 'Jost', sans-serif;;
         margin: 1rem 0rem 2rem 0rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .header__nav {
+        display: none;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        font-size: 30px;
+        color:black;
+        cursor: pointer;
+    }
+    #toggle:checked + .header__nav {
+        display: flex;
+    }
+}
+
 
