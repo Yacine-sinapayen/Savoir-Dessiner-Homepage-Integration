@@ -65,6 +65,7 @@ font-family: 'Jost', sans-serif;;
 .footer__part {
     display: flex;
     flex-direction: column;
+    margin: 0rem 1rem 0rem 1rem;
 }
 .footer__logo{
     padding-bottom: 1rem;
@@ -98,6 +99,10 @@ font-family: 'Jost', sans-serif;;
     width: calc((100%/2) - (2*1rem));
     margin: 1rem;
     padding: 1rem;
+}
+.article__img{
+    border-radius: 10px;
+    width: 100%;
 }
 .background__img{
     background-image: url(/images/Tracé-blanc.svg) ;
@@ -158,7 +163,10 @@ font-family: 'Jost', sans-serif;;
 
 /* Article 3 */
 .article__3{
-    padding: 4rem 25rem 2rem 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 10rem 1rem 10rem;
 }
 .article__3-title{
     text-align: center;
@@ -231,6 +239,55 @@ font-family: 'Jost', sans-serif;;
     right: 20px;
     bottom: 10px;
 }
+
+.bouton__content-voir-les-cours{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.bouton__voir-tous-les-cours{
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: #EFEFEF;
+    border-radius: 10px ;
+    padding: 1rem;
+}
+
+/* Artilce 5-6 */
+.article__5{
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 3rem;
+    align-items: center;
+}
+
+.article__5-title{
+    font-size: 40px;
+    font-weight: 550;
+    margin-bottom: 0.5rem;
+}
+.article__5-description{
+    color: #4A4A4A;
+    font-size: 18px;
+    margin: 1rem 3rem 5rem 0rem;
+}
+.article__5-bouton{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    border : 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 5rem;
+    font-size: 14px;
+}
+
 /* Modifier */
 
 .border--right{
@@ -257,3 +314,114 @@ font-family: 'Jost', sans-serif;;
 .font--weight--bold{
     font-weight: 500;
 }
+
+/*------------- Responsive */
+@media screen and (min-width: 671px) and (max-width: 1274px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .article__1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .background__img{
+        background-position: center;
+    }
+    .article__subtitle{
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    .card__description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article__5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article__container{
+        width: calc((100%/1) - (2rem));
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+    .article__5-description{
+        margin: 1rem 0rem 3rem 0rem;
+    }
+}
+@media screen and (max-width: 671px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .article__1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article__subtitle{
+        margin: 0rem 0rem 1rem 0rem;
+    }
+    .article__title{
+        font-size: 30px;
+    }
+    .background__img{
+        background-position: center;
+    }
+
+    .article__2-main-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article__3{
+        margin: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article__3-title{
+        font-size: 30px;
+    }
+
+    .article__4{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+       margin: 1rem;
+       width: calc((100%/1) - (2*1rem));
+    }
+
+    .card__description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article__5{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article__container{
+        width: calc((100%/1) - (2rem));
+        margin: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+    .article__5-description{
+        margin: 1rem 0rem 3rem 0rem;
+    }
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+        height: 690px;
+    }
+    .footer__part{
+        margin: 1rem 0rem 2rem 0rem;
+    }
+}
+
