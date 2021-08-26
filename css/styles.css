@@ -260,6 +260,7 @@ position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5rem;
 
 }
 .bouton__voir-tous-les-cours{
@@ -334,6 +335,9 @@ label, #toggle
 {
     display: none;
 }
+.acount, #account {
+    display: none;
+}
 
 /*------------- Responsive */
 @media screen and (min-width: 671px) and (max-width: 1274px) {
@@ -341,8 +345,8 @@ label, #toggle
     .header {
         display: flex;
         flex-direction: column;
-        margin-bottom: 8rem;
-
+        margin: 1rem 2rem;
+        position: relative;
     }
     .article__1 {
         display: flex;
@@ -350,7 +354,7 @@ label, #toggle
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 20rem;
+      
     }
     .background__img{
         background-position: center;
@@ -476,9 +480,16 @@ label, #toggle
 }
 
 @media screen and (max-width: 600px) {
-
+  
     .header__nav {
         display: none;
+    }
+    .header__items{
+        white-space: nowrap;
+        font-size: 12px;
+        margin: 0.4rem;
+        display: flex;
+        align-items: center;
     }
  
     label 
@@ -495,6 +506,35 @@ label, #toggle
     #toggle:checked + .header__nav {
         display: flex;
     }
+
+    .header__secondary-nav{
+        display: none;
+    }
+    .acount{
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        font-size: 30px;
+        color:black;
+        cursor: pointer;
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+
+    #account:checked + .header__secondary-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__secondary-items{
+        margin: 1rem 0rem 1rem 0rem;
+    }
+   
 }
 
 
